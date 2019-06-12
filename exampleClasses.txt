@@ -1,0 +1,37 @@
+// An example input file: class.txt
+// C style single line comments
+
+// Class names preceded by a #
+// Specify that pointers are 4 bytes in size. (Default is 4) PTRSIZE 4
+
+//An example class called ExampleClass below
+//Offsets do not have to be in order
+
+#ExampleClass
+	//Indentation is optional, but it's way neater
+	bool bSomething 0xF8
+	BOOL bSomething2 0xF9
+	char aString[3] 0xFA
+	vec3*** ptrToPtrToPtrToAVec3 0xFD
+	bool* bPtrSomething 0x20
+	int8 someInt 0x1A
+	uchar someUnsignedChar 0xABC
+	ExampleClass2* class2InstancePtr 0xAAAAAA// Pointer to custom type must not be given a suffix. Points to an ExampleClass2 instance
+	CustomType70 customTypeInstance 0xB000000// CustomType is some custom type instance, the suffix 70(decimal) is required to indicate the instance size is 70 bytes in size
+	vec5 aVectorWith5Elements 0x500
+	vector5 anotherVectorWith5Elements 0x600
+	vec3 aVectorWith3Elements 0x6A3
+	matrix2x2 a2x2Matrix 0x400
+	Matrix2x2 another2x2Matrix 0x54321 // Supports any size matrix.
+	matrix7x3 a7x3Matrix 0x3000
+	int justA32BitInt 0x80
+	dword aDWord 0x9876
+	int 4DIntMatrix[2][3][4][5] 0xFFFFFF
+
+// Another example class
+
+#ExampleClass2
+	char* someRandomCharPointer 0x1234
+	vec8* aPointerToSomeLongAssVector 0xED
+	matrix5x6* aPointerToA5x6MatrixInstance 0x2345
+	vec3*** aPtrToAPtrToAPtrToAVec3 0x1238

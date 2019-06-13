@@ -19,7 +19,7 @@ type_alias = {
 	"int16" : ["word"],
 	"uint16" : ["uword"],
 	"int32" : ["dword","int"],
-	"uint32" : ["udword"],
+	"uint32" : ["udword","uint"],
 	"int64" : ["qword"],
 	"Matrix" : ["matrix"],
 	"vec" : ["vecotr"],
